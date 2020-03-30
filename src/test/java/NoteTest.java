@@ -59,9 +59,8 @@ public class NoteTest {
     @Test
     void testNegativeGrade(){
         assertThatThrownBy(() -> {
-            Note.of("Kanarek", -3);
+            Note.of("Bartek", -3);
         }).isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("Niewłaściwa ocena");
     }
-    
 }
